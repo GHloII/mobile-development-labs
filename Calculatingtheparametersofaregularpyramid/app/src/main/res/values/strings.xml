@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Параметры пирамиды</string>
+    <string name="title">Площадь и объём пирамиды</string>
+    <string name="side_a_hint">Сторона основания a</string>
+    <string name="side_b_hint">Сторона основания b</string>
+    <string name="height_hint">Высота h</string>
+    <string name="calculate">Рассчитать</string>
+    <string name="result_empty">Введите размеры и нажмите «Рассчитать»</string>
+    <string name="invalid_input">Введите положительные числа во все поля</string>
+    <string name="result_format">Площадь поверхности: %1$.2f\nОбъём: %2$.2f</string>
+</resources>

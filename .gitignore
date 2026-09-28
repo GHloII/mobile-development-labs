@@ -1,0 +1,34 @@
+# Android Studio and IntelliJ IDEA user state
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Local SDK paths and Gradle state
+**/local.properties
+**/.gradle/
+**/build/
+
+# Android and native build outputs
+**/captures/
+**/.externalNativeBuild/
+**/.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Signing material and machine-specific secrets
+*.jks
+*.keystore
+*.hprof
+**/google-services.json
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+*.swp
+
+# Keep Gradle wrapper files, including gradle-wrapper.jar, in Git.
