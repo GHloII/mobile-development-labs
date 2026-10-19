@@ -8,64 +8,144 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:paddingStart="24dp"
+        android:paddingTop="32dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="32dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/title"
             android:textColor="@color/screen_text"
-            android:textSize="22sp" />
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/intro"
+            android:textColor="@color/screen_text"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/diagram_description"
+            android:scaleType="fitCenter"
+            android:src="@drawable/regular_pyramid" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/diagram_caption"
+            android:textColor="@color/screen_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:labelFor="@id/side_a"
+            android:text="@string/side_a_hint"
+            android:textColor="@color/screen_text"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/side_a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:hint="@string/side_a_hint"
+            android:layout_marginTop="2dp"
             android:inputType="numberDecimal"
             android:singleLine="true"
             android:textColor="@color/screen_text"
-            android:textColorHint="@color/field_hint" />
+            android:textColorHint="@color/field_hint"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:labelFor="@id/side_b"
+            android:text="@string/side_b_hint"
+            android:textColor="@color/screen_text"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/side_b"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/side_b_hint"
+            android:layout_marginTop="2dp"
             android:inputType="numberDecimal"
             android:singleLine="true"
             android:textColor="@color/screen_text"
-            android:textColorHint="@color/field_hint" />
+            android:textColorHint="@color/field_hint"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:labelFor="@id/height"
+            android:text="@string/height_hint"
+            android:textColor="@color/screen_text"
+            android:textSize="16sp" />
 
         <EditText
             android:id="@+id/height"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/height_hint"
+            android:layout_marginTop="2dp"
             android:inputType="numberDecimal"
             android:singleLine="true"
             android:textColor="@color/screen_text"
-            android:textColorHint="@color/field_hint" />
+            android:textColorHint="@color/field_hint"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/calculate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="18dp"
             android:backgroundTint="@color/accent"
+            android:minHeight="56dp"
             android:text="@string/calculate"
-            android:textColor="@color/button_text" />
+            android:textColor="@color/button_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/status_ready"
+            android:textColor="@color/screen_text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/result_empty"
             android:textColor="@color/screen_text"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/secondary_button"
+            android:minHeight="52dp"
+            android:text="@string/about"
+            android:textColor="@color/screen_text"
+            android:textSize="16sp" />
     </LinearLayout>
 </ScrollView>

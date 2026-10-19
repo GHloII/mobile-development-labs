@@ -5,6 +5,10 @@
     <color name="field_hint">#FF625C71</color>
     <color name="accent">#FF6548A7</color>
     <color name="button_text">#FFFFFFFF</color>
+    <color name="diagram_fill">#FFE6DDFC</color>
+    <color name="diagram_line">#FF6548A7</color>
+    <color name="diagram_hidden">#FF9B88C4</color>
+    <color name="secondary_button">#FFE6DDFC</color>
     <color name="logo_background">#FF32285D</color>
     <color name="logo_base">#FF6D5BC3</color>
     <color name="logo_left">#FFCEC0FF</color>

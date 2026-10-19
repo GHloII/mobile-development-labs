@@ -5,4 +5,8 @@
     <color name="field_hint">#FFC7BFD3</color>
     <color name="accent">#FFD5BEFF</color>
     <color name="button_text">#FF2C154F</color>
+    <color name="diagram_fill">#FF36274B</color>
+    <color name="diagram_line">#FFD5BEFF</color>
+    <color name="diagram_hidden">#FF8C75B1</color>
+    <color name="secondary_button">#FF36274B</color>
 </resources>

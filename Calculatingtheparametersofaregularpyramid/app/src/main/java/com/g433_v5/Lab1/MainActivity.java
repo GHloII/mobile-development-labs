@@ -5,6 +5,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,6 +19,15 @@ public class MainActivity extends AppCompatActivity {
         EditText sideB = findViewById(R.id.side_b);
         EditText height = findViewById(R.id.height);
         TextView result = findViewById(R.id.result);
+        TextView status = findViewById(R.id.status);
+
+        // Keep author details in resources so the same text works in both layouts.
+        findViewById(R.id.about).setOnClickListener(view ->
+                new AlertDialog.Builder(this)
+                        .setTitle(R.string.about_title)
+                        .setMessage(R.string.about_message)
+                        .setPositiveButton(R.string.close, null)
+                        .show());
 
         findViewById(R.id.calculate).setOnClickListener(view -> {
             try {
@@ -27,11 +37,34 @@ public class MainActivity extends AppCompatActivity {
 
                 double[] values = calculate(a, b, h);
                 result.setText(getString(R.string.result_format, values[0], values[1]));
+                status.setText(R.string.status_done);
             } catch (NumberFormatException e) {
                 result.setText(R.string.invalid_input);
+                status.setText(R.string.status_error);
                 Toast.makeText(this, R.string.invalid_input, Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        // EditText saves its own contents; preserve the calculated text as well.
+        outState.putCharSequence(getString(R.string.state_status),
+                ((TextView) findViewById(R.id.status)).getText());
+        outState.putCharSequence(getString(R.string.state_result),
+                ((TextView) findViewById(R.id.result)).getText());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        ((TextView) findViewById(R.id.status)).setText(
+                savedInstanceState.getCharSequence(getString(R.string.state_status),
+                        getString(R.string.status_ready)));
+        ((TextView) findViewById(R.id.result)).setText(
+                savedInstanceState.getCharSequence(getString(R.string.state_result),
+                        getString(R.string.result_empty)));
     }
 
     private double readPositive(EditText input) {
