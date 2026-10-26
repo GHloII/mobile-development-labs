@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Магнитное поле</string>
+    <string name="lab_title">Магнитное поле</string>
+    <string name="lab_subtitle">Лабораторная работа № 2 · Вариант № 5</string>
+    <string name="description">Измерение магнитного поля по трём осям устройства. Показания обновляются автоматически.</string>
+    <string name="reading_title">Текущие показания</string>
+    <string name="values_empty">X: — мкТл\nY: — мкТл\nZ: — мкТл\n\nМодуль: — мкТл</string>
+    <string name="values_format">X: %1$.2f мкТл\nY: %2$.2f мкТл\nZ: %3$.2f мкТл\n\nМодуль: %4$.2f мкТл</string>
+    <string name="formula">|B| = √(X² + Y² + Z²)</string>
+    <string name="axes">Оси относительно корпуса: X — вправо, Y — к верхнему краю, Z — из экрана. При повороте экрана оси датчика не меняются.</string>
+    <string name="waiting">Ожидание показаний…</string>
+    <string name="measuring">Выполняется измерение</string>
+    <string name="stopped">Измерение приостановлено</string>
+    <string name="no_sensor">Датчик магнитного поля отсутствует на устройстве.</string>
+    <string name="register_failed">Не удалось включить датчик. Нажмите «Начать измерение», чтобы повторить.</string>
+    <string name="bad_event">Датчик передал некорректные данные. Ожидание следующего измерения…</string>
+    <string name="start">Начать измерение</string>
+    <string name="stop">Остановить измерение</string>
+    <string name="all_sensors">Список датчиков</string>
+    <string name="about">Об авторах</string>
+    <string name="about_title">Сведения об исполнителях</string>
+    <string name="authors">Выполнено: Д.Д. Панина, А.А. Дивногорский, Г.И. Иванов.\nГруппа 433\nСПбГТИ (ТУ)</string>
+    <string name="close">Закрыть</string>
+    <string name="sensor_summary">%1$s\nПроизводитель: %2$s\nДиапазон: %3$.2f мкТл · Разрешение: %4$.4f мкТл</string>
+    <string name="accuracy_format">Точность: %1$s</string>
+    <string-array name="accuracy_labels">\n        <item>недостоверная — выполните калибровку</item>\n        <item>низкая</item><item>средняя</item><item>высокая</item>\n    </string-array>\n    <string name="accuracy_unknown">нет данных</string>
+    <string name="calibration">При низкой точности отведите устройство от металла и магнитов и несколько раз плавно опишите им восьмёрку.</string>
+    <string name="sensors_title">Датчики устройства</string>
+    <string name="sensors_count">Найдено датчиков: %1$d</string>
+    <string name="sensor_details">%1$s\nПроизводитель: %2$s\nТип: %3$d · Версия: %4$d\nДиапазон: %5$.4f · Разрешение: %6$.6f\nПотребление: %7$.3f мА\nМинимальный интервал: %8$d мкс\nМаксимальный интервал: %9$d мкс\nFIFO: %10$d / %11$d событий\nРежим отчётности: %12$d · Пробуждение: %13$s</string>
+    <string name="sensor_units_note">Диапазон и разрешение указаны в единицах соответствующего датчика; для магнитного поля — мкТл. Режимы: 0 — непрерывный, 1 — при изменении, 2 — однократный, 3 — специальный.</string>
+    <string name="yes">да</string><string name="no">нет</string>
+    <string name="back">Назад</string>
+    <string name="state_running">running</string>
+</resources>

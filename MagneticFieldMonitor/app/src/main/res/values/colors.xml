@@ -1,0 +1,5 @@
+<resources>
+    <color name="background">#F5F7FA</color><color name="text">#172B40</color>
+    <color name="secondary">#45566B</color><color name="accent">#176C80</color>
+    <color name="surface">#FFFFFF</color><color name="border">#CBD7E1</color>
+</resources>
