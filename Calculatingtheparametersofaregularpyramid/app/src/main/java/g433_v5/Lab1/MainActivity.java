@@ -1,4 +1,4 @@
-package com.g433_v5.Lab1;
+package g433_v5.Lab1;
 
 import android.os.Bundle;
 import android.widget.EditText;

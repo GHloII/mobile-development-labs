@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.g433_v5.Lab1"
+    namespace = "g433_v5.Lab1"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.g433_v5.Lab1"
+        applicationId = "g433_v5.Lab1"
         minSdk = 30
         targetSdk = 37
         versionCode = 1

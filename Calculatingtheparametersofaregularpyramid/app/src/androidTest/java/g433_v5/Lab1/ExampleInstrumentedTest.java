@@ -1,4 +1,4 @@
-package com.g433_v5.Lab1;
+package g433_v5.Lab1;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.g433_v5.Lab1", appContext.getPackageName());
+        assertEquals("g433_v5.Lab1", appContext.getPackageName());
     }
 }

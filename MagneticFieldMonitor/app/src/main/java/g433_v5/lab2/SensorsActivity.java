@@ -1,4 +1,4 @@
-package com.g433_v5.lab2;
+package g433_v5.lab2;
 
 import android.app.Activity;
 import android.hardware.Sensor;
