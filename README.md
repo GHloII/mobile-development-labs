@@ -26,3 +26,14 @@ cd MagneticFieldMonitor
 See [testing instructions and results](MagneticFieldMonitor/TESTING.md).
 
 Report: [Lab 2 report](reports/lab2-report.docx).
+
+## Lab 3: Local document register (variant 5)
+
+Project: [`DocumentRegister`](DocumentRegister/).
+
+A separate Java app for employee memoranda and applications awaiting signature.
+It uses SQLite and a locally integrated RecyclerView, supports adding, editing,
+deleting records and clearing the database, and sorts documents by date ascending.
+Both themes and orientations are supported. See the project README and testing notes.
+
+Report: [Lab 3 report](reports/lab3-report.docx).

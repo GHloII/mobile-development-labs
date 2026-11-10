@@ -1,0 +1,38 @@
+[
+  {
+    "file": "annotation-1.1.0.jar",
+    "sha256": "d38d63edb30f1467818d50aaf05f8a692dea8b31392a049bfa991b159ad5b692"
+  },
+  {
+    "file": "collection-1.0.0.jar",
+    "sha256": "9c8d117b5c2bc120a1cdfeb857e05b495b16c36013570372a708f7827e3ac9f9"
+  },
+  {
+    "file": "core-1.3.2.aar",
+    "sha256": "94de196cd67950cff6ef3e1ac59015f8eaaf61840bdc238f2cf54ddef8dd0be9"
+  },
+  {
+    "file": "core-common-2.0.0.jar",
+    "sha256": "4b80b337779b526e64b0ee0ca9e0df43b808344d145f8e9b1c42a134dac57ad8"
+  },
+  {
+    "file": "customview-1.0.0.aar",
+    "sha256": "20e5b8f6526a34595a604f56718da81167c0b40a7a94a57daa355663f2594df2"
+  },
+  {
+    "file": "lifecycle-common-2.0.0.jar",
+    "sha256": "7bad7a188804adea6fa1f35d5ef99b705f20bd93ecadde484760ff86b535fefc"
+  },
+  {
+    "file": "lifecycle-runtime-2.0.0.aar",
+    "sha256": "e4afc9e636183f6f3e0edf1cf46121a492ffd2c673075bb07f55c7a99dd43cfb"
+  },
+  {
+    "file": "recyclerview-1.2.1.aar",
+    "sha256": "a1ea0329ee6d938305dfd0f8ce5c48dea2aac14e5606d23e7fb60afcfb655d6e"
+  },
+  {
+    "file": "versionedparcelable-1.1.0.aar",
+    "sha256": "9a1d77140ac222b7866b5054ee7d159bc1800987ed2d46dd6afdd145abb710c1"
+  }
+]

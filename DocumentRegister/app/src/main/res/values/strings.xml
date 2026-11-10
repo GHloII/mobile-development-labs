@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Документы на подпись</string>
+    <string name="subtitle">Лабораторная работа 3 · Вариант 5</string>
+    <string name="intro">Служебные записки и заявления работников. Документы упорядочены по дате составления, от ранних к поздним.</string>
+    <string name="add">Добавить</string>
+    <string name="clear">Удалить все</string>
+    <string name="authors">Об авторах</string>
+    <string name="authors_title">Исполнители</string>
+    <string name="authors_text">Д.Д. Панина\nА.А. Дивногорский\nГ.И. Иванов\nГруппа 433 · СПбГТИ (ТУ)</string>
+    <string name="close">Закрыть</string>
+    <string name="empty">Документов пока нет. Добавьте первую запись.</string>
+    <string name="count">Документов: %1$d</string>
+    <string name="edit_title">Изменение документа</string>
+    <string name="add_title">Новый документ</string>
+    <string name="type_label">Тип документа</string>
+    <string name="employee_label">ФИО составителя</string>
+    <string name="employee_hint">Например, Иванов Иван Иванович</string>
+    <string name="date_label">Дата составления</string>
+    <string name="date_hint">ДД.ММ.ГГГГ</string>
+    <string name="choose_date">Выбрать дату</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="delete">Удалить</string>
+    <string name="delete_title">Удалить документ?</string>
+    <string name="delete_message">Документ «%1$s», составитель %2$s, будет удалён.</string>
+    <string name="clear_title">Удалить все документы?</string>
+    <string name="clear_message">Все записи будут удалены из локальной базы. Это действие нельзя отменить.</string>
+    <string name="name_error">Введите ФИО составителя (не более 120 символов).</string>
+    <string name="date_error">Введите существующую дату в формате ДД.ММ.ГГГГ, год от 1900 до 2100.</string>
+    <string name="db_error">Не удалось выполнить операцию с базой данных. Повторите попытку.</string>
+    <string name="missing">Документ уже удалён или не найден.</string>
+    <string name="saved">Документ сохранён.</string>
+    <string name="removed">Документ удалён.</string>
+    <string name="date_format">dd.MM.uuuu</string>
+    <string name="extra_id">document_id</string>
+    <string name="date_display">Дата составления: %1$s</string>
+    <string name="row_description">Изменить документ</string>
+    <string name="db_name">documents.db</string>
+    <string name="db_table">documents</string>
+    <string name="col_id">_id</string>
+    <string name="col_type">document_type</string>
+    <string name="col_employee">employee</string>
+    <string name="col_date">document_date</string>
+    <string name="sql_create">CREATE TABLE %1$s (%2$s INTEGER PRIMARY KEY AUTOINCREMENT, %3$s INTEGER NOT NULL CHECK (%3$s IN (0, 1)), %4$s TEXT NOT NULL CHECK(length(trim(%4$s)) BETWEEN 1 AND 120), %5$s TEXT NOT NULL)</string>
+    <string name="sql_id_where">%1$s = ?</string>
+    <string name="sql_order">%1$s ASC, %2$s ASC</string>
+    <string name="migration_error">Unsupported database schema upgrade</string>
+    <string-array name="document_types">
+        <item>Служебная записка</item>
+        <item>Заявление</item>
+    </string-array>
+    <string name="delete_confirm">Эта запись будет удалена из локальной базы.</string>
+    <string name="date_digits" translatable="false">0123456789.</string>
+</resources>
