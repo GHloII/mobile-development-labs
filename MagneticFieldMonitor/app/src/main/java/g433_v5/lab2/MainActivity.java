@@ -55,6 +55,16 @@ public class MainActivity extends Activity implements SensorEventListener {
             if (running) startListening(); else stopListening();
             toggle.setText(running ? R.string.stop : R.string.start);
         });
+        // Reconnect and discard stale readings; hardware calibration belongs to Android.
+        findViewById(R.id.reset).setEnabled(magnet != null);
+        findViewById(R.id.reset).setOnClickListener(view -> {
+            stopListening();
+            values.setText(R.string.values_empty);
+            showAccuracy(-1);
+            running = true;
+            toggle.setText(R.string.stop);
+            startListening();
+        });
         findViewById(R.id.sensors).setOnClickListener(view ->
                 startActivity(new Intent(this, SensorsActivity.class)));
         findViewById(R.id.about).setOnClickListener(view -> new AlertDialog.Builder(this)

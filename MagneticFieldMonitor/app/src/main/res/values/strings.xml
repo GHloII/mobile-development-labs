@@ -24,7 +24,7 @@
     <string name="sensor_summary">%1$s\nПроизводитель: %2$s\nДиапазон: %3$.2f мкТл · Разрешение: %4$.4f мкТл</string>
     <string name="accuracy_format">Точность: %1$s</string>
     <string-array name="accuracy_labels">\n        <item>недостоверная — выполните калибровку</item>\n        <item>низкая</item><item>средняя</item><item>высокая</item>\n    </string-array>\n    <string name="accuracy_unknown">нет данных</string>
-    <string name="calibration">При низкой точности отведите устройство от металла и магнитов и несколько раз плавно опишите им восьмёрку.</string>
+    <string name="calibration">При низкой точности уберите магнит и отведите устройство от металла, затем несколько раз плавно опишите им восьмёрку. Калибровку выполняет Android. Сброс очищает показания и повторно включает датчик; точность он не изменяет.</string>
     <string name="sensors_title">Датчики устройства</string>
     <string name="sensors_count">Найдено датчиков: %1$d</string>
     <string name="sensor_details">%1$s\nПроизводитель: %2$s\nТип: %3$d · Версия: %4$d\nДиапазон: %5$.4f · Разрешение: %6$.6f\nПотребление: %7$.3f мА\nМинимальный интервал: %8$d мкс\nМаксимальный интервал: %9$d мкс\nFIFO: %10$d / %11$d событий\nРежим отчётности: %12$d · Пробуждение: %13$s</string>
@@ -32,4 +32,6 @@
     <string name="yes">да</string><string name="no">нет</string>
     <string name="back">Назад</string>
     <string name="state_running">running</string>
+    <string name="reset">Сбросить измерение</string>
+    <string name="reset_note">Сброс очищает показания и повторно включает датчик. Он не выполняет аппаратную калибровку.</string>
 </resources>

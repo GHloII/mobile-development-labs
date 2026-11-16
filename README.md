@@ -14,7 +14,7 @@ Open the project directory in Android Studio (Koala or newer) and run the `app` 
 
 Project: [`MagneticFieldMonitor`](MagneticFieldMonitor/).
 
-A separate Java application using only the Android framework (no external libraries). It displays live magnetometer X/Y/Z values in microteslas, field magnitude and accuracy, with start/stop controls, a full sensor inventory and author information. The listener is released while the activity is paused. Both screen orientations and light/dark themes are supported.
+A separate Java application using only the Android framework (no external libraries). It displays live magnetometer X/Y/Z values in microteslas, field magnitude and accuracy, with start/stop and reset controls, a full sensor inventory and author information. Reset reconnects the listener; hardware calibration is controlled by Android. The listener is released while the activity is paused. Both screen orientations and light/dark themes are supported.
 
 Open `MagneticFieldMonitor` in Android Studio (Koala or newer). Use an API 30+ device or an emulator with a magnetometer. The projects have different application IDs and can be installed together.
 
@@ -37,3 +37,15 @@ deleting records and clearing the database, and sorts documents by date ascendin
 Both themes and orientations are supported. See the project README and testing notes.
 
 Report: [Lab 3 report](reports/lab3-report.docx).
+
+## Lab 4: HTTPS pyramid calculator (variant 5)
+
+Project: [`PyramidClient`](PyramidClient/).
+
+Java client with no external runtime dependencies and a real PHP computation
+service. The app sends dimensions over HTTPS from a worker thread, validates the
+JSON answer and shows surface area and volume. Local TLS server setup, tests,
+light/dark themes and portrait/landscape layouts are included. The server runs
+locally for demonstration; no public hosting is configured.
+
+Report: [Lab 4 report](reports/lab4-report.docx).

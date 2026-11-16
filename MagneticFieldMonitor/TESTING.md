@@ -22,6 +22,8 @@ Build the APK and boot one emulator with a magnetic-field sensor. Run `python sc
 | Stop then change field | Readings stay frozen; stopped status shown |
 | Rotate while stopped | Session remains stopped |
 | Start again | Latest field received, measuring status shown |
+| Reset while stopped, field 6, 8, 0 | Reconnects the listener, magnitude 10.00, measuring status |
+| Reset while running, then field 3, 4, 12 | New readings continue, magnitude 13.00 |
 | Sensor inventory | Sensor count and parameter cards shown; Back returns to readings |
 | Author dialog | Names from lab 1 cover shown |
 | Portrait/landscape and light/dark | Text and readings visible; longer content scrolls |
@@ -30,3 +32,9 @@ Build the APK and boot one emulator with a magnetic-field sensor. Run `python sc
 The script changes emulator rotation, theme and magnetic field for these tests; it finishes in portrait/light mode with field 3, 4, 12.
 
 The no-magnetometer and failed-registration branches are implemented but were not exercised on this AVD, which exposes the sensor. They should be checked on a device without a magnetometer; the app must show a diagnostic, disable measurement when absent, and still open the sensor list. This does not require location or camera permissions.
+
+Reset discards the displayed readings/accuracy and reconnects the listener. It does
+not subtract a baseline, force a high accuracy status or calibrate the hardware.
+For low accuracy remove nearby magnets/metal and move the physical phone in a
+figure-eight pattern. Calibration and the accuracy status are controlled by the
+device/Android; physical calibration recovery was not verified on an emulator.

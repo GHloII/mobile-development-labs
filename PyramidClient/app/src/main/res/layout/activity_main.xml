@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/background" android:clipToPadding="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingHorizontal="24dp" android:paddingTop="48dp" android:paddingBottom="24dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title" android:textSize="26sp" android:textColor="@color/text" android:layout_marginBottom="12dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/subtitle" android:textSize="18sp" android:textColor="@color/text" android:layout_marginBottom="12dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/intro" android:textSize="18sp" android:textColor="@color/text" android:layout_marginBottom="12dp" />
+        <ImageView android:layout_width="match_parent" android:layout_height="140dp" android:src="@drawable/ic_pyramid" android:contentDescription="@string/diagram" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/a_label" android:labelFor="@id/side_a" style="@style/Body" />
+        <EditText android:id="@+id/side_a" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:singleLine="true" android:minHeight="52dp" android:maxLength="32" android:textSize="20sp" android:layout_marginBottom="12dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b_label" android:labelFor="@id/side_b" style="@style/Body" />
+        <EditText android:id="@+id/side_b" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:singleLine="true" android:minHeight="52dp" android:maxLength="32" android:textSize="20sp" android:layout_marginBottom="12dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/h_label" android:labelFor="@id/height" style="@style/Body" />
+        <EditText android:id="@+id/height" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:singleLine="true" android:minHeight="52dp" android:maxLength="32" android:textSize="20sp" android:layout_marginBottom="12dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/limits" android:textSize="16sp" android:textColor="@color/text" android:layout_marginBottom="12dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/endpoint_label" android:labelFor="@id/endpoint" style="@style/Body" />
+        <EditText android:id="@+id/endpoint" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textUri" android:singleLine="true" android:minHeight="52dp" android:maxLength="512" android:textSize="20sp" android:layout_marginBottom="12dp" android:text="@string/endpoint_default" />
+        <Button android:id="@+id/calculate" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/calculate" style="@style/Action" />
+        <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ready" android:textSize="20sp" android:textColor="@color/text" android:layout_marginTop="16dp" android:accessibilityLiveRegion="polite" />
+        <TextView android:id="@+id/result" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/empty" android:textSize="20sp" android:textColor="@color/text" android:layout_marginTop="16dp" android:accessibilityLiveRegion="polite" />
+        <Button android:id="@+id/about" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/about" style="@style/Action" android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>

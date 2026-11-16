@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Пирамида онлайн</string>
+    <string name="title">Расчёт пирамиды на сервере</string>
+    <string name="subtitle">Лабораторная работа № 4 · Вариант № 5</string>
+    <string name="intro">Введите стороны прямоугольного основания и высоту. PHP-сервер вычислит площадь полной поверхности и объём. При a = b основание квадратное.</string>
+    <string name="diagram">Пирамида с вершиной над центром основания</string>
+    <string name="a_label">Сторона основания a</string>
+    <string name="b_label">Сторона основания b</string>
+    <string name="h_label">Высота h</string>
+    <string name="limits">Размеры: больше 0 и не больше 1 000 000. Результат — в квадратных и кубических единицах введённой длины.</string>
+    <string name="endpoint_label">Адрес PHP-сервиса HTTPS</string>
+    <string name="endpoint_default" translatable="false">https://localhost:8443/solve.php</string>
+    <string name="calculate">Рассчитать на сервере</string>
+    <string name="ready">Расчёт ожидает ввода данных</string>
+    <string name="waiting">Отправка запроса…</string>
+    <string name="done">Расчёт выполнен PHP-сервером</string>
+    <string name="empty">Результат появится здесь</string>
+    <string name="result_format">Площадь поверхности: %1$.6g\nОбъём: %2$.6g</string>
+    <string name="input_error">Введите три числа больше 0 и не больше 1 000 000.</string>
+    <string name="url_error">Укажите HTTPS-адрес сервиса без логина, пароля, параметров и фрагмента.</string>
+    <string name="network_error">Сервер недоступен. Проверьте адрес, сеть и запуск сервиса.</string>
+    <string name="tls_error">Не удалось проверить сертификат HTTPS-сервера. Проверьте адрес и сертификат.</string>
+    <string name="http_error">Сервер отклонил запрос. Код HTTP: %1$d</string>
+    <string name="response_error">Сервер вернул некорректный ответ.</string>
+    <string name="interrupted">Запрос прерван при закрытии или повороте экрана. Повторите расчёт.</string>
+    <string name="about">Об авторах</string>
+    <string name="authors">Выполнено: Д.Д. Панина, А.А. Дивногорский, Г.И. Иванов.\nГруппа 433\nСПбГТИ (ТУ)</string>
+    <string name="close">Закрыть</string>
+    <string name="state_status" translatable="false">status</string>
+    <string name="state_result" translatable="false">result</string>
+    <string name="state_busy" translatable="false">busy</string>
+    <string name="scheme_https" translatable="false">https</string>
+    <string name="method_post" translatable="false">POST</string>
+    <string name="header_content_type" translatable="false">Content-Type</string>
+    <string name="header_accept" translatable="false">Accept</string>
+    <string name="mime_form" translatable="false">application/x-www-form-urlencoded; charset=UTF-8</string>
+    <string name="mime_json" translatable="false">application/json</string>
+    <string name="key_a" translatable="false">a</string>
+    <string name="key_b" translatable="false">b</string>
+    <string name="key_h" translatable="false">h</string>
+    <string name="key_ok" translatable="false">ok</string>
+    <string name="key_res" translatable="false">res</string>
+    <string name="key_surface" translatable="false">surface</string>
+    <string name="key_volume" translatable="false">volume</string>
+</resources>
